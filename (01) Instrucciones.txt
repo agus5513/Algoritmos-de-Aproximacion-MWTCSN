@@ -1,4 +1,4 @@
-Se deja el código fuente de para generar los videos,
+Se deja el código fuente para generar los videos,
 se requiere instalación previa de 'manim' con todas sus dependencias.
 
 También el código de Python (que puede requerir instalación de los paquetes
@@ -65,3 +65,4 @@ Comandos (para ejecutar entre el paso (II) y el paso (III)):
 	
 
 		
+
