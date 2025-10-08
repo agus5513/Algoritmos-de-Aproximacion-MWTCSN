@@ -1,0 +1,67 @@
+Se deja el código fuente de para generar los videos,
+se requiere instalación previa de 'manim' con todas sus dependencias.
+
+También el código de Python (que puede requerir instalación de los paquetes
+utilizados en el preludio) para que se pueda inspeccionar y usar.
+
+Obs: el correr los archivos de Python desde el virtualEnvironment de
+manim hace que la mayoría de las dependencias no requieran instalación. Pero
+de igualmente, si se instalan las dependencias todo se puede ejecutar bien.
+
+Forma de uso:
+(I)     Para correr el código se requiere tener Python3 instalado en el sistema
+ 	y ejecutar desde la carpeta donde se ubican los archivos:
+
+		python3 -i funciones.py
+
+(II)    Si el paso anterior no generó errores se tendrá un interprete de Python
+	con todas las funciones cargadas.
+
+(III)   Para salir del intérprete hacer 
+		
+		exit()
+
+Comandos (para ejecutar entre el paso (II) y el paso (III)): 
+
+(I)     Generación de matrices aleatorias (deben guardarse en alguna variable):
+	Crean matrices cuadradas  de dimensión n con entradas aleatorias
+	pueden ser métricas o no. Donde n es un número ingreso por el usuario
+	
+	A = CrearMatrizRandom(n)
+	B = CrearGrafoMetricoRandom(n)
+
+(II)    Cómputo exacto/aproximado de óptimo a problemas:
+	Tomando como entrada una matriz cuadrada, simétrica, de enteros de 
+	punto flotante. El input puede ser una matriz predefinida por el usuario
+	o una generada por el punto (I)
+
+	TSPFuerzaBruta(M)
+	MWTCSNFuerzaBruta(M)
+	Christofides(M)
+
+	Obs: el llamado a Christofides implica una seguidilla de llamados
+	a funciones auxiliares cuyo cuerpo está en funciones.py
+	Algunas de estas funciones son: árbol de recubrimiento mínimo,
+	emparejamiento mínimo, tour Euleriano, shortcuts.
+
+(III)   Uso de datos predefinidos:
+	Para hacer uso del caso 'brazil58' no es necesario ninguna función,
+	se puede usar como cualquier otra matriz.
+	Para hacer uso de la matriz del mapa de Uruguay, hay que ejecutar antes
+		M = MatrizUruguaya()
+	Para hacer uso de la matriz asociada a DSJ1000, hay que ejecutar antes
+		M = DSJ()
+
+(IV)    Para monitoreo del tiempo de ejecución de los algoritmos se tiene que
+	hacer lo siguiente:
+		Ingresar como primer parámetro solo el nombre de la función
+		que se quiere monitorear. Como segundo parámetro, su argumento
+
+		Ejemplo: tiempo(Christofides, brazil58) 
+
+		
+	
+	
+	
+
+		
