@@ -1,3 +1,7 @@
+Se adjunta el pdf de la presentación y los videos utilizados.
+Si se guardan en la misma carpeta los hipervinculos a hacer 
+click en [video] desde adobe acrobat deberían de andar.
+
 Se deja el código fuente para generar los videos,
 se requiere instalación previa de 'manim' con todas sus dependencias.
 
@@ -65,4 +69,5 @@ Comandos (para ejecutar entre el paso (II) y el paso (III)):
 	
 
 		
+
 
